@@ -2,8 +2,8 @@
   "name": "messenger",
   "version": "1.0.0",
   "scripts": {
-    "dev": "parcel src/pages/index.hbs --no-cache",
-    "build": "parcel build src/pages/index.hbs && node ./server.js",
+    "start": "parcel src/pages/index.hbs --no-cache  && node ./server.js",
+    "build": "parcel build src/pages/index.hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
