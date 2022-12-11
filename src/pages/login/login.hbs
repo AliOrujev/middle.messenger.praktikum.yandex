@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="../../styles/style.css">
+
+<div class="loginForm">
+    <header>Вход</header>
+    <input class="input" placeholder="Логин" type="text" value="">
+    <input class="input" placeholder="Пароль"  type="password" value="">
+    <div>
+        <input class="inputCheckbox"type="checkbox">
+        <label class="check" for="checkbox">Запомнить меня</label>
+    </div>
+    <a href="../register/register.hbs">Еще не зарегистрированы?</a>
+    {{>button/button onClick="../../pages/chat/chatList.hbs" header="Вход"}}
+</div>

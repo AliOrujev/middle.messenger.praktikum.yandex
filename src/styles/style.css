@@ -1,0 +1,11 @@
+@import "../pages/login/login.pcss";
+@import "../pages/register/register.pcss";
+@import "../pages/chat/chatList.pcss";
+@import "../pages/userSettings/userSettings.pcss";
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
