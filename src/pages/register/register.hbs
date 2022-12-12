@@ -1,12 +1,24 @@
 <link rel="stylesheet" href="../../styles/style.css">
 
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+</head>
+<body class="containerRegister">
 <div class="registerForm">
-    <header>Регистрация</header>
-    <input placeholder="Имя" type="text">
-    <input placeholder="Фамилия" type="text">
-    <input placeholder="Логин" type="text">
-    <input placeholder="Email" type="text">
-    <input placeholder="Пароль"  type="password">
-    <input placeholder="Телефон"  type="number">
+    <h1 class="title">Регистрация</h1>
+    <input class="input" placeholder="Имя" type="text">
+    <input class="input" placeholder="Фамилия" type="text">
+    <input class="input" placeholder="Логин" type="text">
+    <input class="input" placeholder="Email" type="text">
+    <input class="input" placeholder="Пароль"  type="password">
+    <input class="input" placeholder="Телефон"  type="number">
     {{>button/button  onClick="../../pages/chat/chatList.hbs" header="Зарегистрироваться"}}
 </div>
+
+</body>
+</html>

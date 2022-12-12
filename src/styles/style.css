@@ -2,8 +2,13 @@
 @import "../pages/register/register.pcss";
 @import "../pages/chat/chatList.pcss";
 @import "../pages/userSettings/userSettings.pcss";
+@import "../partials/button/button.pcss";
 
 
+html {
+    font-family: 'Inter', cursive;
+
+}
 .container {
     display: flex;
     justify-content: center;
