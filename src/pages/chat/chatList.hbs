@@ -1,20 +1,66 @@
-<link rel="stylesheet" href="../../styles/style.css">
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Чаты</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+<body>
 <div class="chat">
     <div class="dialog">
-        <a href="../userSettings/userSettings.hbs">Настройки пользователя</a>
-        <h3>Your messages:</h3>
-      <div class="message">Hi!How are you?</div>
-      <div class="message">I'm going to academy</div>
-      <div class="message">What about you?</div>
+        <a class="profileBtn" href="../userSettings/userSettings.hbs">Мой профиль</a>
+        <h3 class="h3">Ваши сообщения:</h3>
+        <form class="searchForm">
+            <input class="searchInput" type="text" placeholder="Поиск сообщений...">
+            <button class="searchBtn" type="submit">Найти</button>
+        </form>
+        <div class="chatBlock">
+            <img class="avatar" src="../../asserts/img.png">
+            <div class="messageBlock">
+                <h4>Алекс</h4>
+                <span class="receivedMessage">Изображение</span>
+            </div>
+        </div>
+        <div class="chatBlock">
+            <img class="avatar" src="../../asserts/img.png">
+            <div class="messageBlock">
+                <h4>Кэйт</h4>
+                <span class="receivedMessage">Как дела?</span>
+            </div>
+        </div>
+        <div class="chatBlock">
+            <img class="avatar" src="../../asserts/img.png">
+            <div class="messageBlock">
+                <h4>Брайан</h4>
+                <span class="receivedMessage">Давай!</span>
+            </div>
+        </div>
     </div>
     <div class="messengers">
         <header class="header">
-            <h1>Alex Voronoy</h1>
-            <div class="sendMessage">
-                <input type="text" value="">
-                <button>Отправить сообщение</button>
+            <img class="avatar" src="../../asserts/img.png">
+            <div class="messageBlock">
+                <h4>Брайан</h4>
             </div>
+            <img class="icon" src="../../asserts/img_1.png">
         </header>
+        <div class="messagesContainer">
+            <p class="messageReceived">Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент попросила Хассельблад адаптировать модель SWC для полетов на Луну.
+                Сейчас мы все знаем что астронавты летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны, так как астронавты с собой забрали только кассеты с пленкой.
+                Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+            </p>
+            <p class="messageSend">
+                Это восхитительно!
+            </p>
+        </div>
+        <div class="sendMessage">
+            <input class="sendInput" placeholder="Введите сообщение" type="text" value="">
+            <button class="sendMessageBtn"><img class="sendIcon" src="../../asserts/img_3.png"></button>
+        </div>
     </div>
 </div>
+</body>
+</html>

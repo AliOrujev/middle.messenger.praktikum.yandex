@@ -8,13 +8,17 @@ body {
     height: 1000px;
     display: flex;
     flex-direction: row;
-    background-color: burlywood;
+    background-color: #ffffff;
 }
 .dialog {
-    display: flex;
-    flex-direction: column;
-    background-color: #5b4937;
-
+    width: 320px;
+    height: 1000px;
+    background: #FBFBFB;
+}
+.messengers {
+    border-left: #cbcbcb 1px solid;
+    width: 310px;
+    height: 1000px;
 }
 
 .message {
@@ -23,11 +27,120 @@ body {
 }
 
 .header {
-    width: 1360px;
-    background-color: #be852c;
-    height: 1000px;
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 1160px;
+    background-color: #FFF;
+    padding-left: 20px;
+    border-bottom: #adadad 1px solid;
 }
+
+.icon {
+    margin-left: 905px;
+}
+
  .sendMessage {
-     background-color: white;
-     width: 300px
+     display: flex;
+     flex-direction: row;
+     height: 50px;
+     width: 700px;
+     margin-top: 850px;
+     margin-left: 300px;
  }
+
+ .sendInput {
+     width: 600px;
+     height: 34px;
+ }
+
+ .sendMessageBtn {
+     width: 60px;
+     height: 40px;
+     margin-left: 20px;
+ }
+
+ .messagesContainer {
+     height: 10px;
+     margin-left: 15px;
+     margin-top: 0px;
+ }
+ .messageReceived {
+     background-color: #d9d9d9;
+     width: 500px;
+     padding: 15px;
+     border-radius: 10%;
+ }
+ .messageSend {
+     background-color: #6d8aee;
+     width: 500px;
+     padding: 15px;
+     border-radius: 10%;
+     margin-left: 600px;
+ }
+
+ .sendIcon {
+    width: 40px;
+     height: 40px;
+ }
+
+ .h3 {
+    width: 300px;
+ }
+
+.profileBtn{
+    width:90px;
+    text-align:center;
+    display:block;
+    font-family: arial;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    border: #ffffff 1px solid;
+    color: #1071FF;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px auto;
+    transition: .5s;
+    border-radius: 0px;
+}
+
+.profileBtn:hover {
+    transition: .1s;
+    border: #1071FF 1px solid;
+}
+.profileBtn:active {
+    color: #000;
+    border: #1A1A1A 1px solid;
+    transition: .07s;
+    background-color: #FFF;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+.chatBlock {
+    margin-top: 15px;
+    width: 300px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: #adadad 1px solid;
+}
+
+h4 {
+    margin-top: 0px;
+    width: 100px;
+    height: 5px;
+}
+
+.messageBlock {
+    margin-left: 20px;
+}
+
+.receivedMessage {
+    height: 2px;
+}
+
