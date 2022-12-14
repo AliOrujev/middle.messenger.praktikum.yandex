@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "parcel build src/pages/index.hbs --no-cache && node server.js",
-    "build": "parcel build src/pages/index.hbs --no-cache",
+    "build": "parcel src/pages/index.hbs --no-cache",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

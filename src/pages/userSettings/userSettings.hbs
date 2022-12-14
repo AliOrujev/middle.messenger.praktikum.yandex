@@ -1,45 +1,44 @@
-<link rel="stylesheet" href="../../styles/style.css">
-
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Авторизация</title>
+    <link rel="stylesheet" href="../../styles/style.css">
 </head>
 <body class="containerSettings">
 <div class="settingsForm">
     <h1 class="title">Настройки пользователя:</h1>
     <div>
         <label class="required"></label>
-        <input class="input" placeholder="Имя" type="text">
+        <input class="input" name="first_name" placeholder="Имя" type="text">
     </div>
     <div>
         <label class="required"></label>
-        <input class="input" placeholder="Фамилия" type="text">
+        <input class="input" name="second_name" placeholder="Фамилия" type="text">
     </div>
     <div>
         <label class="required"></label>
-        <input class="input" placeholder="Логин" type="text">
+        <input class="input" name="login" placeholder="Логин" type="text">
     </div>
     <div>
         <label class="required"></label>
-        <input class="input" placeholder="Email" type="text">
+        <input class="input" name="email" placeholder="Email" type="text">
     </div>
     <div>
-        <input class="input" placeholder="Телефон"  type="number">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" placeholder="Старый пароль"  type="password">
+        <input class="input" name="phone" placeholder="Телефон"  type="number">
     </div>
     <div>
         <label class="required"></label>
-        <input class="input" placeholder="Новый пароль"  type="password">
+        <input class="input" name="password" placeholder="Старый пароль"  type="password">
     </div>
     <div>
-        <input class="input" placeholder="Загрузить новый автаар"  type="file">
+        <label class="required"></label>
+        <input class="input" name="password" placeholder="Новый пароль"  type="password">
+    </div>
+    <div>
+        <input class="input" name="avatar" placeholder="Загрузить новый автаар"  type="file">
     </div>
     <div>
         <span class="requiredDescription"> - обязательные поля</span>
