@@ -10,16 +10,10 @@
 <body class="containerLogin">
 <div class="loginForm">
     <h1 class="title">Вход</h1>
+    {{> input/input labelClass="required" inputName="login" inputClass="input" placeholder="Логин" type="text"}}
+    {{> input/input labelClass="required" inputName="password" inputClass="input" placeholder="Пароль" type="password"}}
     <div>
-        <label class="required"></label>
-        <input class="input" name="login" placeholder="Логин" type="text" value="">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="password" placeholder="Пароль"  type="password" value="">
-    </div>
-    <div>
-        <span class="requiredDescription"> - обязаталельные поля</span>
+        <span class="requiredDescription"> - обязательные поля</span>
     </div>
     <div>
         <input class="inputCheckbox"type="checkbox">
