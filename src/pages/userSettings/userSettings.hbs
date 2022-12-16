@@ -10,36 +10,14 @@
 <body class="containerSettings">
 <div class="settingsForm">
     <h1 class="title">Настройки пользователя:</h1>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="first_name" placeholder="Имя" type="text">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="second_name" placeholder="Фамилия" type="text">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="login" placeholder="Логин" type="text">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="email" placeholder="Email" type="text">
-    </div>
-    <div>
-        <input class="input" name="phone" placeholder="Телефон"  type="number">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="password" placeholder="Старый пароль"  type="password">
-    </div>
-    <div>
-        <label class="required"></label>
-        <input class="input" name="password" placeholder="Новый пароль"  type="password">
-    </div>
-    <div>
-        <input class="input" name="avatar" placeholder="Загрузить новый автаар"  type="file">
-    </div>
+    {{> input/input labelClass="required" inputName="first_name" inputClass="input" placeholder="Имя" type="text"}}
+    {{> input/input labelClass="required" inputName="second_name" inputClass="input" placeholder="Фамилия" type="text"}}
+    {{> input/input labelClass="required" inputName="login" inputClass="input" placeholder="Логин" type="text"}}
+    {{> input/input labelClass="required" inputName="email" inputClass="input" placeholder="Email" type="text"}}
+    {{> input/input labelClass=null inputName="phone" inputClass="input" placeholder="Телефон" type="number"}}
+    {{> input/input labelClass="required" inputName="password" inputClass="input" placeholder="Старый пароль" type="password"}}
+    {{> input/input labelClass="required" inputName="password" inputClass="input" placeholder="Новый пароль" type="password"}}
+    {{> input/input labelClass=null inputName="avatar" inputClass="input" placeholder="Загрузить новый автаар" type="file"}}
     <div>
         <span class="requiredDescription"> - обязательные поля</span>
     </div>

@@ -1,18 +1,7 @@
-{{!< mobile}}
 <ul>
-    <li>
-        <a href="main.hbs">Main Page</a>
-    </li>
-    <li>
-        <a href="login/login.hbs">Авторизоваться</a>
-    </li>
-    <li>
-        <a href="register/register.hbs">Зарегистрироваться</a>
-    </li>
-    <li>
-        <a href="404/404.hbs">404</a>
-    </li>
-    <li>
-        <a href="5**/5**.hbs">500</a>
-    </li>
+    {{> list/list title="Main Page" href="main.hbs"}}
+    {{> list/list title="Авторизоваться" href="login/login.hbs"}}
+    {{> list/list title="Зарегистрироваться" href="register/register.hbs"}}
+    {{> list/list title="404 Page" href="404/404.hbs"}}
+    {{> list/list title="500 Page" href="5**/5**.hbs"}}
 </ul>
