@@ -2,7 +2,7 @@
 @import "../pages/register/register.pcss";
 @import "../pages/chat/chatList.pcss";
 @import "../pages/userSettings/userSettings.pcss";
-@import "../partials/button/button.pcss";
+@import "../components/button/button.pcss";
 @import "../pages/404/404.pcss";
 @import "../pages/5**/5**.pcss";
 

@@ -1,3 +1,7 @@
+:root {
+    --pink: #ff596c;
+}
+
 .containerLogin {
     display: flex;
     justify-content: center;
@@ -9,7 +13,7 @@
     box-shadow: 0 15px 30px 10px rgba(0, 0, 0, .5);
     display: flex;
     flex-direction: column;
-    background-color: #fdfdfd;
+    background-color: var(--white);
     width: 500px;
     height: 500px;
     align-items: center;
@@ -27,13 +31,13 @@
 
 .input:focus {
     color: #212529;
-    background-color: #fff;
-    border-color: #bdbdbd;
+    background-color:  var(--white);
+    border-color: var(--grey);
     outline: 0;
-    box-shadow: 0 0 0 1px #6e90f1;
+    box-shadow: 0 0 0 1px var(--blueSendMessage);
 }
 
-.required:after { content:"*"; color: #ff596c }
+.required:after { content:"*"; color: var(--pink)}
 
-.requiredDescription:before{ content:" *"; color: #ff596c }
+.requiredDescription:before{ content:" *"; color: var(--pink)}
 

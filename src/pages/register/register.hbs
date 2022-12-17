@@ -10,16 +10,16 @@
 <body class="containerRegister">
 <div class="registerForm">
     <h1 class="title">Регистрация</h1>
-    {{> input/input labelClass="required" inputName="first_name" inputClass="input" placeholder="Имя" type="text"}}
-    {{> input/input labelClass="required" inputName="second_name" inputClass="input" placeholder="Фамилия" type="text"}}
-    {{> input/input labelClass="required" inputName="login" inputClass="input" placeholder="Логин" type="text"}}
-    {{> input/input labelClass="required" inputName="email" inputClass="input" placeholder="Email" type="text"}}
-    {{> input/input labelClass="required" inputName="password" inputClass="input" placeholder="Пароль" type="password"}}
-    {{> input/input labelClass=null inputName="phone" inputClass="input" placeholder="Телефон" type="number"}}
+    {{ components/input/input labelClass="required" inputName="first_name" inputClass="input" placeholder="Имя" type="text"}}
+    {{ components/input/input labelClass="required" inputName="second_name" inputClass="input" placeholder="Фамилия" type="text"}}
+    {{ components/input/input labelClass="required" inputName="login" inputClass="input" placeholder="Логин" type="text"}}
+    {{ components/input/input labelClass="required" inputName="email" inputClass="input" placeholder="Email" type="text"}}
+    {{ components/input/input labelClass="required" inputName="password" inputClass="input" placeholder="Пароль" type="password"}}
+    {{ components/input/input labelClass=null inputName="phone" inputClass="input" placeholder="Телефон" type="number"}}
     <div>
         <span class="requiredDescription"> - обязательные поля</span>
     </div>
-    {{>button/button  onClick="../../pages/chat/chatList.hbs" header="Зарегистрироваться"}}
+    {{ components/button/button  onClick="../../pages/chat/chatList.hbs" header="Зарегистрироваться"}}
     <a href="../login/login.hbs">Уже есть аккаунт?</a>
 </div>
 

@@ -1,3 +1,13 @@
+:root {
+    --white: #ffffff;
+    --grey: #cbcbcb;
+    --darkgrey: #adadad;
+    --greyReceivedMessage: #d9d9d9;
+    --blueSendMessage: #6d8aee;
+    --black: #000;
+    --lightblue: #1071FF;
+}
+
 body {
     justify-content: flex-start;
     align-items: flex-start;
@@ -8,22 +18,17 @@ body {
     height: 1000px;
     display: flex;
     flex-direction: row;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 .dialog {
     width: 320px;
     height: 1000px;
-    background: #FBFBFB;
+    background: var(--white);
 }
 .messengers {
-    border-left: #cbcbcb 1px solid;
+    border-left: var(--grey) 1px solid;
     width: 310px;
     height: 1000px;
-}
-
-.message {
-    margin-top: 10px;
-    background-color: #ff596c;
 }
 
 .header {
@@ -31,9 +36,9 @@ body {
     flex-direction: row;
     height: 70px;
     width: 1160px;
-    background-color: #FFF;
+    background-color: var(--white);
     padding-left: 20px;
-    border-bottom: #adadad 1px solid;
+    border-bottom: var(--darkgrey) 1px solid;
 }
 
 .icon {
@@ -66,13 +71,13 @@ body {
      margin-top: 0px;
  }
  .messageReceived {
-     background-color: #d9d9d9;
+     background-color: var(--greyReceivedMessage);
      width: 500px;
      padding: 15px;
      border-radius: 10%;
  }
  .messageSend {
-     background-color: #6d8aee;
+     background-color: var(--blueSendMessage);
      width: 500px;
      padding: 15px;
      border-radius: 10%;
@@ -96,8 +101,8 @@ body {
     text-decoration: none;
     font-weight: 300;
     font-size: 14px;
-    border: #ffffff 1px solid;
-    color: #1071FF;
+    border: var(--white) 1px solid;
+    color: var(--lightblue);
     padding: 6px;
     padding-left: 20px;
     padding-right: 20px;
@@ -108,13 +113,13 @@ body {
 
 .profileBtn:hover {
     transition: .1s;
-    border: #1071FF 1px solid;
+    border: var(--lightblue) 1px solid;
 }
 .profileBtn:active {
-    color: #000;
+    color: var(--black);
     border: #1A1A1A 1px solid;
     transition: .07s;
-    background-color: #FFF;
+    background-color: var(--white);
 }
 
 .avatar {
@@ -127,7 +132,7 @@ body {
     height: 80px;
     display: flex;
     flex-direction: row;
-    border-bottom: #adadad 1px solid;
+    border-bottom: var(--darkgrey) 1px solid;
 }
 
 h4 {
