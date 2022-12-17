@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+<body class="containerRegister">
+<div class="registerForm">
+    <h1 class="title">Регистрация</h1>
+    {{ components/input/input labelClass="required" inputName="first_name" inputClass="input" placeholder="Имя" type="text"}}
+    {{ components/input/input labelClass="required" inputName="second_name" inputClass="input" placeholder="Фамилия" type="text"}}
+    {{ components/input/input labelClass="required" inputName="login" inputClass="input" placeholder="Логин" type="text"}}
+    {{ components/input/input labelClass="required" inputName="email" inputClass="input" placeholder="Email" type="text"}}
+    {{ components/input/input labelClass="required" inputName="password" inputClass="input" placeholder="Пароль" type="password"}}
+    {{ components/input/input labelClass=null inputName="phone" inputClass="input" placeholder="Телефон" type="number"}}
+    <div>
+        <span class="requiredDescription"> - обязательные поля</span>
+    </div>
+    {{ components/button/button  onClick="../../pages/chat/chatList.hbs" header="Зарегистрироваться"}}
+    <a href="../login/login.hbs">Уже есть аккаунт?</a>
+</div>
+
+</body>
+</html>

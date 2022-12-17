@@ -1,0 +1,43 @@
+:root {
+    --pink: #ff596c;
+}
+
+.containerLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginForm{
+    border-radius: 5%;
+    box-shadow: 0 15px 30px 10px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    border-radius:10px;
+    margin-top: 25px;
+    width: 250px;
+    height: 30px;
+    font-family:inherit;
+    font-size: inherit;
+}
+
+.input:focus {
+    color: #212529;
+    background-color:  var(--white);
+    border-color: var(--grey);
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--blueSendMessage);
+}
+
+.required:after { content:"*"; color: var(--pink)}
+
+.requiredDescription:before{ content:" *"; color: var(--pink)}
+

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+</head>
+<body class="containerLogin">
+<div class="loginForm">
+    <h1 class="title">Вход</h1>
+    {{ components/input/input labelClass="required" inputName="login" inputClass="input" placeholder="Логин" type="text"}}
+    {{ components/input/input labelClass="required" inputName="password" inputClass="input" placeholder="Пароль" type="password"}}
+    <div>
+        <span class="requiredDescription"> - обязательные поля</span>
+    </div>
+    <div>
+        <input class="inputCheckbox"type="checkbox">
+        <label class="check" for="checkbox">Запомнить меня</label>
+    </div>
+    <a href="../register/register.hbs">Еще не зарегистрированы?</a>
+    {{ components/button/button onClick="../../pages/chat/chatList.hbs" header="Войти"}}
+</div>
+</body>
+</html>
+
